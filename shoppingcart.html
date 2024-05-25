@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+    <meta charset="UTF8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="Pragma" content="no-cache">
+    <link rel="stylesheet" href="css/spoppingcart.css"/>
+    <title>Shopping cart</title>
+</head>
+<body>
+<nav>
+    <a href="shoppingpage.html">Shop</a>
+    <a href="shoppingcart.html" class="line-shop-page-cart">Shopping Cart</a>
+</nav>
+
+<div class="main-container">
+    <div class="inputs">
+        <div class="form">
+            <form action="#" method="POST">
+                <p>
+                    <span>Name:</span> <br/>
+                    <input type="text" name="#" id="user-name"/>
+                </p>
+                <p id="email-block">
+                    <span>Email:</span> <br/>
+                    <input type="email" name="#" id="user-email"/>
+                </p>
+
+                <p id="phone-block">
+                    <span>Phone:</span> <br/>
+                    <input type="text" name="#" id="phone" placeholder="example: +1-0123-4567890"/>
+                </p>
+                <p>
+                    <span>Address:</span> <br/>
+                    <input type="text" name="#" id="address"/>
+                </p>
+            </form>
+        </div>
+    </div>
+    <div class="order"></div>
+</div>
+
+<div class="container-button">
+    <div class="shift-product-item-action"></div>
+    <div class="product-item-action">
+        <div class="total-price"><span class="total-sum">Total price:<br><span class="total-sum-price">999</span></div>
+        <button class="button-submit" id="button"><span class="button-text">Submit</span></button>
+    </div>
+</div>
+
+<script src="script/shoppingcart.js"></script>
+</body>
+</html>

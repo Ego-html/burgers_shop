@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Success</title>
+<!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="d-flex justify-content-center align-items-center vh-100">
+<div class="container text-center">
+    <div id="order-success-message" class="alert alert-success" role="alert"></div>
+</div>
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name');
+        const phone = urlParams.get('phone');
+
+        if (name && phone) {
+            document.getElementById('order-success-message').innerText = `Заказ успішно прийнят. Дякуємо, ${name}. Як буде доставлений, ми зв'яжимось з вами по номеру ${phone}.`;
+        } else {
+            document.getElementById('order-success-message').innerText = 'Щось не так. Спробуй ще.';
+        }
+    });
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</body>
+</html>

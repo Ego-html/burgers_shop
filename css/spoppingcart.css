@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url(../fonts/Gilroy-Semibold.ttf);
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url(../fonts/Merriweather-Black.ttf)
+}
+
+body {
+    background-color: black;
+    font-family: 'Gilroy', sans-serif;
+    color: white;
+    background-image: url(../images/Group2.png);
+
+}
+
+nav {
+    margin-left: 40px;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+a {
+    position: relative;
+    color: whitesmoke;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+a:hover::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+}
+
+.line-shop-page-cart {
+    position: relative;
+    margin-left: 20px;
+}
+
+.line-shop-page-cart::before {
+    content: "";
+    position: absolute;
+    left: -14px;
+    top: 0px;
+    height: 100%;
+    width: 2px;
+    background-color: white;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #353535;
+    border-radius: 15px;
+    margin: 50px;
+    background-image: url(../images/burgers_bg.png);
+}
+
+input {
+    font-size: 20px;
+    text-align: center;
+}
+
+.inputs {
+    border: none;
+    border-radius: 25px;
+    height: 100vh;
+    width: 45%;
+    margin-top: 50px;
+
+}
+
+.order {
+    border: none;
+    border-radius: 25px;
+    height: 100vh;
+    width: 45%;
+    margin-left: 50px;
+    margin-top: 50px;
+    overflow: auto;
+
+}
+
+.burger-order {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #353535;
+    margin: 50px;
+    border-radius: 15px;
+    background: #211A16;
+    transition: transform 0.5s;
+
+}
+
+.burger-order:hover {
+    transform: scale(1.1);
+}
+
+.burgers-img {
+    margin-top: 25px;
+    width: 50%;
+}
+
+.product-text-price-сount {
+    width: 45%;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.burger-name {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 25px;
+}
+
+.product-item-text {
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.product-item-price {
+    font-size: 26px;
+    line-height: 39px;
+    margin-top: 15px;
+}
+
+.input-count {
+    width: 130px;
+    height: 45px;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.form {
+    margin-left: 70px;
+    margin-top: 70px;
+
+}
+
+input {
+    width: 550px;
+    height: 50px;
+    border-radius: 12px;
+    margin-bottom: 35px;
+    margin-top: 20px;
+}
+
+.button-submit {
+    margin-left: 20px;
+}
+
+.button-text {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.total-sum {
+    font-size: 22px;
+
+}
+
+.input-arrows {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.arrows {
+    display: flex;
+    flex-direction: column;
+    height: 47px;
+    border: white solid 1px;
+    margin-top: 20px;
+    cursor: pointer;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.container-button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-item-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 23%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.shift-product-item-action {
+    width: 40%;
+}
+
+#button {
+    cursor: not-allowed;
+    color: gray;
+    background: #343434;
+    border-radius: 15px;
+    width: 220px;
+    height: 60px;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    outline: none;
+}
+
+#button.button-able {
+    background: linear-gradient(95.61deg, #DA8023 0%, #E2B438 100%);
+    color: black;
+    cursor: pointer;
+}
+
+
+
+#button.button-submit.disable {
+    cursor: not-allowed;
+    color: gray;
+    background: #343434;
+    border-radius: 15px;
+    width: 220px;
+    height: 60px;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    outline: none;
+}
+
+.input-count {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.button-remove {
+    position: absolute;
+    right: 15px;
+    width: 30px;
+    height: 25px;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    background-color: #211A16;
+}
+
+.empty-cart {
+    align-items: center;
+    text-align: center;
+
+}
+
+.img-basket {
+    display: block;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.shopingcart-is-empty {
+    font-family: 'Merriweather';
+    margin-top: 50px;
+    margin-right: 52px;
+}
+
+.button-first-page {
+    background: linear-gradient(95.61deg, #DA8023 0%, #E2B438 100%);
+    margin-left: -50px;
+    margin-top: 40px;
+    width: 165px;
+    height: 50px;
+    border: 0;
+    border-radius: 10px;
+    font-family: 'Merriweather';
+    color: black;
+}
+
+.order-more-burgers {
+    cursor: pointer;
+    width: 220px;
+    height: 60px;
+    left: 916px;
+    top: 1000px;
+    background: linear-gradient(95.61deg, #cfcfcf 0%, #333333 0%);
+    font-size: 16px;
+    color: white;
+    border: 0;
+    border-radius: 8px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    transition: transform 0.5s;
+}
+
+.order-more-burgers:hover {
+    transform: scale(1.1);
+}
+
+#email-block {
+    position: relative;
+}
+
+.wrong-email {
+    border: 1px solid red;
+}
+
+.wrong-email.none {
+    border: none;
+}
+
+.message-incorrect-email {
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+    position: absolute;
+    top: 95px;
+    left: 7px;
+}
+
+.message-incorrect-email.none {
+    display: none;
+}
+
+.wrong-phone {
+    border: 1px solid red;
+}
+
+.message-incorrect-phone {
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+    position: absolute;
+    top: 95px;
+    left: 7px;
+}
+
+#phone-block {
+    position: relative;
+}
+
+.message-incorrect-phone.none {
+    display: none;
+}
+
+.wrong-phone.none {
+    border: none;
+}
+
+.correct-email {
+    display: none;
+
+}
+
+.phone-correct-number {
+    display: none;
+}
+
+#button.button-able {
+    background: linear-gradient(95.61deg, #DA8023 0%, #E2B438 100%);
+    color: black;
+    cursor: pointer;
+}
